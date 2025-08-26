@@ -9,7 +9,6 @@ redirects = []
 [build]
 publish = "/home/wu/Documents/homework"
 publishOrigin = "default"
-base = "/home/wu/Documents/homework"
 
 [build.environment]
 
