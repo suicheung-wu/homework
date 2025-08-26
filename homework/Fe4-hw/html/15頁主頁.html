@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本精選旅遊指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="static/css/main.[hash].css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/15頁主頁.css">
+        
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>日本精選旅遊指南</span>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="/html/15頁主頁.html"><i class="fas fa-home"></i> 首頁</a></li>
+            <li><a href="/html/15頁東京.html"><i class="fas fa-train-subway"></i> 東京都</a></li>
+            <li><a href="/html/15頁大阪.html"><i class="fas fa-utensils"></i> 大阪府</a></li>
+            <li><a href="/html/15頁愛知.html"><i class="fas fa-car"></i> 愛知縣</a></li>
+            <li><a href="/html/15頁京都.html"><i class="fas fa-torii-gate"></i> 京都府</a></li>
+            <li><a href="/html/15頁北海.html"><i class="fas fa-snowflake"></i> 北海道</a></li>
+            <li><a href="/html/15頁廣島.html"><i class="fas fa-dove"></i> 廣島縣</a></li>
+            <li><a href="/html/15頁福岡.html"><i class="fas fa-umbrella-beach"></i> 福岡縣</a></li>
+            <li><a href="/html/15頁德島.html"><i class="fas fa-water"></i> 德島縣</a></li>
+            <li><a href="/html/15頁琦玉.html"><i class="fas fa-subway"></i> 琦玉縣</a></li>
+            <li><a href="/html/15頁宮城.html"><i class="fas fa-tree"></i> 宮城縣</a></li>
+            <li><a href="/html/15頁青森.html"><i class="fas fa-apple-alt"></i> 青森縣</a></li>
+            <li><a href="/html/15頁石川.html"><i class="fas fa-fish"></i> 石川縣</a></li>
+            <li><a href="/html/15頁岡山.html"><i class="fas fa-sun"></i> 岡山縣</a></li>
+            <li><a href="/html/15頁兵庫.html"><i class="fas fa-landmark"></i> 兵庫縣</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-container">
+        <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search" placeholder="搜尋都道府縣..." aria-label="搜尋都道府縣">
+        </div>
+    </div>
+    
+    <main>
+        <!-- 首頁內容 -->
+        <div id="home-page">
+            <h2 class="page-title">探索日本精選14都道府縣的魅力</h2>
+            
+            <!-- 地區篩選 -->
+            <div class="region-filter">
+                <button class="region-btn active" data-region="all">全部地區</button>
+                <button class="region-btn" data-region="hokkaido">北海道地區</button>
+                <button class="region-btn" data-region="tohoku">東北地區</button>
+                <button class="region-btn" data-region="kanto">關東地區</button>
+                <button class="region-btn" data-region="chubu">中部地區</button>
+                <button class="region-btn" data-region="kansai">關西地區</button>
+                <button class="region-btn" data-region="chugoku">中國地區</button>
+                <button class="region-btn" data-region="shikoku">四國地區</button>
+                <button class="region-btn" data-region="kyushu">九州地區</button>
+            </div>
+            
+            <div class="prefecture-grid">
+                <!-- 東京都 -->
+                <div class="prefecture-card" data-region="kanto">
+                    <div class="crest-above">
+                        <img src="/img/15/東京.png" alt="東京都徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/東京１.png" alt="東京都" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>東京都 <span class="japanese-name">(とうきょうと)</span></h2>
+                        <p>日本的首都，融合了現代與傳統文化。東京塔、淺草寺、澀谷十字路口等著名景點。購物天堂銀座、原宿，美食從壽司到拉麵應有盡有。</p>
+                        <a href="/html/15頁東京.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+
+                <!-- 大阪府 -->
+                <div class="prefecture-card" data-region="kansai">
+                    <div class="crest-above">
+                        <img src="/img/15/大阪.png" alt="大阪府徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/大阪１.png" alt="大阪府" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>大阪府 <span class="japanese-name">(おおさかふ)</span></h2>
+                        <p>以美食和購物聞名，被稱為"日本的廚房"。道頓堀、大阪城、環球影城等景點吸引無數遊客。章魚燒、大阪燒等街頭美食不可錯過。</p>
+                        <a href="/html/15頁大阪.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 愛知縣 -->
+                <div class="prefecture-card" data-region="chubu">
+                    <div class="crest-above">
+                        <img src="/img/15/愛知.png" alt="愛知縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/愛知１.png" alt="愛知縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>愛知縣 <span class="japanese-name">(あいちけん)</span></h2>
+                        <p>名古屋是其主要城市，以名古屋城、熱田神宮和味噌豬排聞名。豐田汽車總部所在地，日本製造業的中心地帶。中部國際機場是重要的交通樞紐。</p>
+                        <a href="/html/15頁愛知.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 京都府 -->
+                <div class="prefecture-card" data-region="kansai">
+                    <div class="crest-above">
+                        <img src="/img/15/京都.png" alt="京都府徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/京都１.png" alt="京都府" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>京都府 <span class="japanese-name">(きょうとふ)</span></h2>
+                        <p>日本傳統文化的代表城市，擁有17處世界文化遺產。金閣寺、清水寺、伏見稻荷大社等景點聞名遐邇。四季分明，春櫻秋楓景色絕美。</p>
+                        <a href="/html/15頁京都.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 北海道 -->
+                <div class="prefecture-card" data-region="hokkaido">
+                    <div class="crest-above">
+                        <img src="/img/15/北海.png" alt="北海道徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/北海１.png" alt="北海道" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>北海道 <span class="japanese-name">(ほっかいどう)</span></h2>
+                        <p>日本最北端的島嶼，以廣闊的自然景觀聞名。冬季滑雪、夏季花田、秋季美食，四季皆宜旅遊。札幌雪祭、富良野薰衣草田、函館夜景不可錯過。</p>
+                        <a href="/html/15頁北海.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 廣島縣 -->
+                <div class="prefecture-card" data-region="chugoku">
+                    <div class="crest-above">
+                        <img src="/img/15/廣島.png" alt="廣島縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/廣島１.png" alt="廣島縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>廣島縣 <span class="japanese-name">(ひろしまけん)</span></h2>
+                        <p>和平紀念公園和原爆圓頂館見證歷史，宮島的嚴島神社是日本三景之一。廣島燒和牡蠣是當地特色美食，瀨戶內海的島嶼風光令人陶醉。</p>
+                        <a href="/html/15頁廣島.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 福岡縣 -->
+                <div class="prefecture-card" data-region="kyushu">
+                    <div class="crest-above">
+                        <img src="/img/15/福岡.png" alt="福岡縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/福岡１.png" alt="福岡縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>福岡縣 <span class="japanese-name">(ふくおかけん)</span></h2>
+                        <p>九州門戶城市，博多拉麵發源地。擁有繁華的天神商圈、歷史悠久的太宰府天滿宮，以及能古島等自然景觀。屋台文化(路邊攤)是當地特色。</p>
+                        <a href="/html/15頁福岡.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 德島縣 -->
+                <div class="prefecture-card" data-region="shikoku">
+                    <div class="crest-above">
+                        <img src="/img/15/德島.png" alt="德島縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/德島１.png" alt="德島縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>德島縣 <span class="japanese-name">(とくしまけん)</span></h2>
+                        <p>以阿波舞聞名，每年8月舉辦的阿波舞祭吸引數百萬遊客。鳴門海峽的漩渦是世界三大漩渦之一，祖谷溪的蔓橋是重要文化財。</p>
+                        <a href="/html/15頁德島.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 琦玉縣 -->
+                <div class="prefecture-card" data-region="kanto">
+                    <div class="crest-above">
+                        <img src="/img/15/琦玉.png" alt="琦玉縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/琦玉１.png" alt="琦玉縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>琦玉縣 <span class="japanese-name">(さいたまけん)</span></h2>
+                        <p>東京的衛星城市，擁有鐵道博物館、嚕嚕米主題公園等親子景點。川越的"小江戶"保留了大量江戶時代建築，秩父地區的自然風光優美。</p>
+                        <a href="/html/15頁琦玉.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 宮城縣 -->
+                <div class="prefecture-card" data-region="tohoku">
+                    <div class="crest-above">
+                        <img src="/img/15/宮城.png" alt="宮城縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/宮城１.png" alt="宮城縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>宮城縣 <span class="japanese-name">(みやぎけん)</span></h2>
+                        <p>仙台市是東北最大城市，以伊達政宗和牛舌聞名。松島是日本三景之一，秋季的紅葉和冬季的雪景尤其美麗。2011年東日本大地震受災嚴重。</p>
+                        <a href="/html/15頁宮城.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 青森縣 -->
+                <div class="prefecture-card" data-region="tohoku">
+                    <div class="crest-above">
+                        <img src="/img/15/青森.png" alt="青森縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/青森１.png" alt="青森縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>青森縣 <span class="japanese-name">(あおもりけん)</span></h2>
+                        <p>以蘋果和睡魔祭聞名，擁有世界自然遺產白神山地。弘前城的櫻花、奧入瀨溪流的楓葉、八甲田山的滑雪場都是著名景點。</p>
+                        <a href="/html/15頁青森.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 石川縣 -->
+                <div class="prefecture-card" data-region="chubu">
+                    <div class="crest-above">
+                        <img src="/img/15/石川.png" alt="石川縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/石川１.png" alt="石川縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>石川縣 <span class="japanese-name">(いしかわけん)</span></h2>
+                        <p>金澤市擁有日本三大名園之一的兼六園，加賀友禪和九谷燒等傳統工藝聞名。能登半島的海鮮和溫泉資源豐富，輪島朝市是日本三大朝市之一。</p>
+                        <a href="/html/15頁石川.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 岡山縣 -->
+                <div class="prefecture-card" data-region="chugoku">
+                    <div class="crest-above">
+                        <img src="/img/15/岡山.png" alt="岡山縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/岡山１.png" alt="岡山縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>岡山縣 <span class="japanese-name">(おかやまけん)</span></h2>
+                        <p>"晴天之國"，擁有日本三大名園之一的後樂園。倉敷美觀地區保留江戶時代風貌，瀨戶大橋連接本州與四國。白桃和葡萄是當地特產。</p>
+                        <a href="/selfwork/html/15頁岡山.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+                
+                <!-- 兵庫縣 -->
+                <div class="prefecture-card" data-region="kansai">
+                    <div class="crest-above">
+                        <img src="/img/15/兵庫.png" alt="兵庫縣徽">
+                    </div>
+                    <div class="prefecture-image-wrapper">
+                        <img src="/img/15/兵庫１.png" alt="兵庫縣" class="prefecture-image">
+                    </div>
+                    <div class="prefecture-content">
+                        <h2>兵庫縣 <span class="japanese-name">(ひょうごけん)</span></h2>
+                        <p>神戶是國際港口城市，以神戶牛和異人館聞名。姬路城是日本國寶，城崎溫泉是著名溫泉鄉。淡路島的洋蔥和明石鯛魚是當地特產。</p>
+                        <a href="/html/15頁兵庫.html" class="btn">探索更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>關於我們</h3>
+                <p>提供日本各地旅遊資訊，幫助您規劃完美的日本之旅。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>聯絡我們</h3>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="電子郵件" required>
+                    <textarea placeholder="您的訊息" rows="4" required></textarea>
+                    <button type="submit">發送訊息</button>
+                </form>
+            </div>
+            
+            <div class="footer-section">
+                <h3>追蹤我們</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 日本精選旅遊指南. 版權所有.</p>
+        </div>
+    </footer>
+    
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="/js/15頁主頁.js"></script>
+    
+</body>
+</html>
