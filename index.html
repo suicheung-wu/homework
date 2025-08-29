@@ -6,6 +6,18 @@
     <title>探索世界 - 專業旅遊服務</title>
 <style>
         /* 基本樣式 */
+ :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #3498db;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --text-light: #7f8c8d;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
         body {
             font-family: 'Microsoft JhengHei', Arial, sans-serif;
             margin: 0;
@@ -14,7 +26,7 @@
         }
         
         header {
-            background-color: #1e88e5;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             padding: 1rem;
             text-align: center;
